@@ -1,0 +1,48 @@
+/* Keyframes for the floating animation */
+@keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* General card styling */
+  .feature-card {
+    border-radius: 16px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: float 5s ease-in-out infinite;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Gradient background */
+    padding: 20px;
+  }
+  
+  /* Hover effect for the card */
+  .feature-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Typography and content styling inside the card */
+  .feature-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .feature-card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .feature-card-description {
+    font-size: 1rem;
+    color: #666;
+  }
+  
